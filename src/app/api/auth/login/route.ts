@@ -9,17 +9,20 @@ export async function POST(request: Request) {
     // TODO: 实现实际的登录逻辑
     // 例如: 验证用户凭据、生成令牌等
 
+    console.debug('login', validatedData)
+
     return NextResponse.json({
       success: true,
-      data: { message: '登录成功' }
+      data: { message: '登录成功' },
     })
   } catch (error) {
+    console.error('login error', error)
     return NextResponse.json(
       {
         success: false,
-        error: '登录失败，请检查邮箱和密码'
+        error: '登录失败，请检查邮箱和密码',
       },
       { status: 400 }
     )
   }
-} 
+}

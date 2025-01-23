@@ -1,5 +1,5 @@
 export interface ActionResponse {
   success: boolean
-  data?: Record<string, any>
+  data?: Record<string, unknown>
   error?: string
 }

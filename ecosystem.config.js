@@ -26,7 +26,6 @@ module.exports = {
       log_type: 'json', // 日志格式
       max_size: '20M', // 日志文件大小限制
       rotate_interval: '1d', // 日志轮转间隔
-      wait_ready: true, // 等待应用程序发送 ready 信号
       listen_timeout: 50000, // 等待时间
       kill_timeout: 5000, // 发送 SIGKILL 信号前的等待时间
       increment_var: 'PORT', // 自动增加端口号

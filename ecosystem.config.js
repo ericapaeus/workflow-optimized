@@ -5,8 +5,8 @@ module.exports = {
       script: 'npm', // 执行命令
       args: 'start', // 传递给命令的参数
       cwd: './', // 应用程序所在目录
-      instances: 'max', // 负载均衡实例数 max 表示根据 CPU 核心数创建
-      exec_mode: 'cluster', // 集群模式
+      instances: 1, // 改为 1 个实例
+      exec_mode: 'fork', // 改为 fork 模式
       autorestart: true, // 程序崩溃后自动重启
       watch: true, // 启用文件监控
       max_memory_restart: '1G', // 内存超限重启

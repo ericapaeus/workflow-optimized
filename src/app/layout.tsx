@@ -19,7 +19,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <html lang="zh" suppressHydrationWarning className={geist.variable}>
       <body className="min-h-screen bg-background font-sans antialiased">
         <Providers>
-          <RootLayout>{children}</RootLayout>
+          <div className="relative flex min-h-screen flex-col">
+            <RootLayout>{children}</RootLayout>
+          </div>
         </Providers>
       </body>
     </html>

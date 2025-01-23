@@ -3,7 +3,7 @@ module.exports = {
     {
       name: 'pgg2', // 应用名称
       script: 'npm', // 执行命令
-      args: 'start', // 传递给命令的参数
+      args: 'run pm2:start', // 传递给命令的参数
       cwd: './', // 应用程序所在目录
       instances: 1, // 改为 1 个实例
       exec_mode: 'fork', // 改为 fork 模式

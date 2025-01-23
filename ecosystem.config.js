@@ -10,13 +10,18 @@ module.exports = {
       autorestart: true, // 程序崩溃后自动重启
       watch: true, // 启用文件监控
       max_memory_restart: '1G', // 内存超限重启
+
+      // 默认环境变量 (development)
       env: {
-        NODE_ENV: 'production',
+        NODE_ENV: 'development',
         PORT: 3000,
-        // 其他环境变量
       },
+
+      // 生产环境变量 (使用 --env production 时生效)
       env_production: {
         NODE_ENV: 'production',
+        PORT: 3000,
+        // 其他生产环境特定的变量
       },
       // 日志配置
       log_date_format: 'YYYY-MM-DD HH:mm:ss',
